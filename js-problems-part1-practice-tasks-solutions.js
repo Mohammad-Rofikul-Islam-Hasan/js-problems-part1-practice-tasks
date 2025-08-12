@@ -58,3 +58,11 @@ function longestWord(str) {
 }
 
 console.log(longestWord("I am learning Programming to become a programmer"));
+
+// Task 5 Solution
+
+function randomNumber() {
+  return Math.floor(Math.random() * 11) + 10;
+}
+
+console.log(randomNumber());
