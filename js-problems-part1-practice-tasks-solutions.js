@@ -43,3 +43,18 @@ function countVowels(str) {
 }
 
 console.log(countVowels("I love JavaScript"));
+
+// Task 4 Solution
+
+function longestWord(str) {
+  str = str.split(" ");
+  let longest = "";
+  for (let i = 0; i < str.length; i++) {
+    if (str[i].length > longest.length) {
+      longest = str[i];
+    }
+  }
+  return longest;
+}
+
+console.log(longestWord("I am learning Programming to become a programmer"));
