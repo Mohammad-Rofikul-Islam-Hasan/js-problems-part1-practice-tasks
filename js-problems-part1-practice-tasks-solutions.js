@@ -10,7 +10,6 @@ console.log(celsiusToFahrenheit(2));
 function countDuplicates(arr, num) {
   let count = 0;
   for (let i = 0; i < arr.length; i++) {
-    // console.log(arr[i]);
     if (arr[i] === num) {
       count++;
     }
@@ -19,3 +18,28 @@ function countDuplicates(arr, num) {
 }
 
 console.log(countDuplicates([30, 15, 8, 95, 7, 25, 15], 15));
+
+// Task 3 Solution
+
+function countVowels(str) {
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (
+      str[i].includes("a") ||
+      str[i].includes("A") ||
+      str[i].includes("e") ||
+      str[i].includes("E") ||
+      str[i].includes("i") ||
+      str[i].includes("I") ||
+      str[i].includes("o") ||
+      str[i].includes("O") ||
+      str[i].includes("u") ||
+      str[i].includes("U")
+    ) {
+      count++;
+    }
+  }
+  return count;
+}
+
+console.log(countVowels("I love JavaScript"));
